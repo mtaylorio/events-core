@@ -1,6 +1,6 @@
-name:                events-core
+name:                mtaylor-io-events-core
 version:             0.1.0.0
-github:              "mtaylor91/events-core"
+github:              "mtaylorio/events-core"
 license:             BSD-3-Clause
 author:              "Mike Taylor"
 maintainer:          "mike.charles.taylor@gmail.com"
@@ -17,7 +17,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/mtaylor91/events-core#readme>
+description:         Please see the README on GitHub at <https://github.com/mtaylorio/events-core#readme>
 
 dependencies:
 - aeson

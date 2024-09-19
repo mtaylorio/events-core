@@ -28,8 +28,11 @@ type StatusAPI
 
 
 type SecureAPI
-  = AuthProtect "signature-auth" :>
-    ( "sessions" :> SessionsAPI
+  = AuthProtect "signature-auth" :> ProtectedAPI
+
+
+type ProtectedAPI
+  = ( "sessions" :> SessionsAPI
   :<|> "topics" :> TopicsAPI
     )
 

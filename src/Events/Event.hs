@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE ScopedTypeVariables #-}
-module Event
+module Events.Event
   ( Event(..)
   , EventData(..)
   , EventWrapper(..)

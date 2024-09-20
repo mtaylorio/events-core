@@ -1,5 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
-module Status
+module Events.Status
   ( Health(..)
   , StatusResponse(..)
   ) where

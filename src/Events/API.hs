@@ -1,9 +1,9 @@
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE TypeOperators #-}
-module API
-  ( module API
-  , module API.Sessions
-  , module API.Topics
+module Events.API
+  ( module Events.API
+  , module Events.API.Sessions
+  , module Events.API.Topics
   ) where
 
 import Data.Aeson
@@ -11,11 +11,11 @@ import Data.UUID
 import Servant
 import qualified Data.Aeson.KeyMap as KM
 
-import API.Helpers
-import API.Sessions
-import API.Topics
-import Event
-import Status
+import Events.API.Helpers
+import Events.API.Sessions
+import Events.API.Topics
+import Events.Event
+import Events.Status
 
 
 type API

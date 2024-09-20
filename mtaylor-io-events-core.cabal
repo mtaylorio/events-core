@@ -25,12 +25,12 @@ source-repository head
 
 library
   exposed-modules:
-      API
-      API.Helpers
-      API.Sessions
-      API.Topics
-      Event
-      Status
+      Events.API
+      Events.API.Helpers
+      Events.API.Sessions
+      Events.API.Topics
+      Events.Event
+      Events.Status
   other-modules:
       Paths_mtaylor_io_events_core
   autogen-modules:

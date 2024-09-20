@@ -1,8 +1,8 @@
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TypeOperators #-}
-module API.Helpers
-  ( module API.Helpers
+module Events.API.Helpers
+  ( module Events.API.Helpers
   ) where
 
 import Data.Aeson

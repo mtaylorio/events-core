@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
-module API.Sessions
-  ( module API.Sessions
+module Events.API.Sessions
+  ( module Events.API.Sessions
   ) where
 
 import Data.Aeson

@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
-module API.Topics
-  ( module API.Topics
+module Events.API.Topics
+  ( module Events.API.Topics
   ) where
 
 import Data.Aeson

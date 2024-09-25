@@ -4,7 +4,6 @@ module Events.Event
   ( Event(..)
   , EventData(..)
   , EventWrapper(..)
-  , PublishEvent(..)
   ) where
 
 import Data.Aeson
@@ -13,24 +12,6 @@ import Data.Time.Clock (UTCTime)
 import Data.UUID (UUID)
 import qualified Data.Aeson.KeyMap as KM
 import qualified Data.ByteString.Lazy as BL
-
-
-data PublishEvent = PublishEvent
-  { publishEventTopic :: !UUID
-  , publishEventData :: !(KM.KeyMap Value)
-  } deriving (Eq, Show)
-
-
-instance FromJSON PublishEvent where
-  parseJSON = withObject "PublishEvent" $ \o -> do
-    topic <- o .: "topic"
-    return $ PublishEvent topic o
-
-
-instance ToJSON PublishEvent where
-  toJSON (PublishEvent topic data') = Object
-    $ KM.insert "topic" (toJSON topic)
-    data'
 
 
 data EventData = EventData

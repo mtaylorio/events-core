@@ -64,6 +64,7 @@ type TopicAPI
 
 type EventsAPI
   = ( ListAPI EventData
+  :<|> ReqBody '[JSON] EventData :> Post '[JSON] EventData
   :<|> Capture "event" UUID :> EventAPI
     )
 
